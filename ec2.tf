@@ -1,7 +1,7 @@
 # configured aws provider with proper credentials
 provider "aws" {
   region  = "eu-west-2"
-  #profile = "Mohamedamin1"
+  profile = "terraform-user"
 }
 
 
@@ -11,7 +11,7 @@ terraform {
     bucket  = "amin-terraform-state-bucket"
     key     = "build/terraform.tfstate"
     region  = "eu-west-2"
-    #profile = "terraform-user"
+    profile = "terraform-user"
   }
 }
 
